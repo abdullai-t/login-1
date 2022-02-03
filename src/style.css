@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:regular,bold,italic&subset=latin,latin-ext");
+@import url("/font-awesome-4.6.3/css/font-awesome.min.css");
+
+.app-main-wrapper {
+  padding: 20px 20px;
+  border-radius: 10px;
+  width: 30vw;
+  margin: auto;
+}
+.root-entry {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+#svg-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#svg-name-container p {
+  color: #6a60db;
+  font-weight: bold;
+}
+
+#svg {
+  height: 150px;
+}
+
+.input-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-item-container:first-child {
+  margin-bottom: 20px;
+}
+.input-item-container input {
+  border: 2px solid #766ecf;
+  border-radius: 6px;
+  padding: 13px 20px;
+  width: 100%;
+  color: #7a73c9;
+}
+
+.input-item-container input::placeholder {
+  color: #7a73c9;
+  font-size: 0.8rem;
+}
+.input-item-container input:focus {
+  outline: none !important;
+}
+#forget-pass {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.7rem;
+}
+#forget-pass a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #6a60db;
+}
+.error {
+  border: 2px solid tomato !important;
+}
+
+#btns {
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#btns div button {
+  width: 100%;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+}
+.email-login {
+  margin-bottom: 2rem;
+}
+.email-login button {
+  background-color: #1a1a34;
+}
+
+.google-login button {
+  background-color: #5b86e5;
+  display: flex;
+}
+.google-login button:hover {
+  background: #6a60db !important;
+  transition: 0.4s ease-in-out;
+}
+.email-login button:hover {
+  color: #6a60db !important;
+  background-color: white !important;
+  transition: 0.4s ease-in-out;
+}
+.google-login button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1.2rem;
+}
+.z-depth {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.z-depth-float {
+  box-shadow: 0 1px 0px 0 rgba(0, 0, 0, -1.84), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 0px 0 rgba(0, 0, 0, -1.84),
+    0 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 480px) {
+  .root-entry {
+    height: 90vh;
+  }
+  .app-main-wrapper {
+    padding: 20px 20px;
+    border-radius: 10px;
+    width: 85%;
+    margin: auto;
+  }
+  #btns div button {
+    padding: 10px 15px;
+  }
+}
